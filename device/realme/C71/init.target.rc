@@ -1,0 +1,13 @@
+on early-init
+    setprop ro.product.device C71
+    setprop ro.product.model RMX5303
+    setprop ro.product.brand realme
+    setprop ro.product.manufacturer realme
+    setprop ro.vendor.build.security_patch 2026-01-01
+
+on init
+    # Start recovery service
+    # class_start recovery
+
+on charger
+    class_start charger
